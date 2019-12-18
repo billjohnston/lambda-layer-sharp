@@ -4,12 +4,12 @@
   "description": "Sharp package compiled for the Lambda environment",
   "main": "index.js",
   "scripts": {
-    "build": "docker run -v \"$PWD\":/var/task -it lambci/lambda:build-nodejs8.10 /bin/bash -c \"npm install\"",
+    "build": "docker run -v \"$PWD\":/var/task -it lambci/lambda:build-nodejs12.x /bin/bash -c \"npm install\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrew Hammond",
   "license": "MIT",
   "dependencies": {
-    "sharp": "^0.21.3"
+    "sharp": "^0.23.4"
   }
 }
